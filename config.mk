@@ -1,2 +1,5 @@
-SOURCES = src
-RULES   = PSR2
+SOURCES         = src
+RULES           = PSR2
+PORT            = 7080
+DISPLAY_ERRORS  = On
+ERROR_REPORTING = E_ALL & ~E_DEPRECATED & ~E_STRICT
