@@ -1,0 +1,2 @@
+SOURCES = src
+RULES   = PSR2

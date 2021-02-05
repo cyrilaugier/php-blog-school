@@ -1,3 +1,5 @@
+include config.mk
+
 all: install
 
 vendor: composer.json
@@ -8,4 +10,7 @@ composer.lock: composer.json
 
 install: vendor composer.lock
 
-.PHONY: all install
+lint: install
+	php ./vendor/bin/phpcs -p --colors --standard=$(RULES) $(SOURCES)
+
+.PHONY: all install lint
