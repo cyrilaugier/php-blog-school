@@ -1,8 +1,8 @@
 Php Blog School
 ===============
 
-Installer les dépendances du projet :
--------------------------------------
+Installer les dépendances du projet
+-----------------------------------
 
     $ make
     ou
